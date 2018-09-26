@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Дамир Масалимов](https://up.htmlacademy.ru/adaptive/15/user/441629).
-* Наставник: `Неизвестно`.
+* Наставник: [Андрей Островский](https://up.htmlacademy.ru/adaptive/15/user/198062).
 
 ---
 
