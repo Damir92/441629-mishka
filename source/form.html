@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Вязание на заказ</title>
+</head>
+
+<body>
+  <header class="page-header">
+    <div class="page-header__wrapper">
+      <a class="page-header__logo-link" href="index.html">
+        <img class="page-header__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Магазин Мишка">
+      </a>
+      <button class="page-header__toggle" type="button">Открыть меню</button>
+    </div>
+    <nav class="main-menu">
+      <ul class="main-menu__list site-list">
+        <li class="site-list__item">
+          <a class="site-list__link" href="#">Каталог товаров</a>
+        </li>
+        <li class="site-list__item">
+          <a class="site-list__link" href="#">Вязание на заказ</a>
+        </li>
+        <li class="site-list__item">
+          <a class="site-list__link" href="#">Поиск по сайту</a>
+        </li>
+        <li class="site-list__item">
+          <a class="site-list__link" href="#">Корзина:<span> пока пусто</span></a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main class="page-main">
+    <h1 class="page-main__title">Вязание на заказ</h1>
+    <section class="parameters">
+      <h2 class="visually-hidden">Форма заказа</h2>
+      <p class="parameters__description">
+        Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
+      </p>
+      <form class="parameters__form" action="https://echo.htmlacademy.ru" method="get">
+        <fieldset class="parameters__group group">
+          <legend class="group__legend">Тип</legend>
+          <ul class="group__list">
+            <li class="group__item">
+              <label class="group__label">
+                <input class="group__radio" type="radio" name="type" value="interior" checked> Аксессуар для интерьера
+              </label>
+            </li>
+            <li class="group__item">
+              <label class="group__label">
+                <input class="group__radio" type="radio" name="type" value="toy"> Детская игрушка
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="parameters__group group">
+          <legend class="group__legend">Цвет</legend>
+          <ul class="group__list">
+            <li class="group__item">
+              <label class="group__label">
+                <input class="group__checkbox" type="checkbox" name="white" value="white" checked> Белый
+              </label>
+            </li>
+            <li class="group__item">
+              <label class="group__label">
+                <input class="group__checkbox" type="checkbox" name="gray" value="gray" checked> Серый
+              </label>
+            </li>
+            <li class="group__item">
+              <label class="group__label">
+                <input class="group__checkbox" type="checkbox" name="tiffany" value="tiffany"> «Тиффани»
+              </label>
+            </li>
+            <li class="group__item">
+              <label class="group__label">
+                <input class="group__checkbox" type="checkbox" name="black" value="black"> Черный
+              </label>
+            </li>
+            <li class="group__item">
+              <label class="group__label">
+                <input class="group__checkbox" type="checkbox" name="pink" value="pink"> Розовый
+              </label>
+            </li>
+            <li class="group__item">
+              <label class="group__label">
+                <input class="group__checkbox" type="checkbox" name="orange" value="orange"> Оранжевый
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="parameters__group group">
+          <legend class="group__legend">ФИО</legend>
+          <ul class="group__list">
+            <li class="group__item">
+              <label class="group__label">
+                Имя:
+                <input type="text" class="group__text" name="first-name" placeholder="Введите ваше имя*" required>
+              </label>
+            </li>
+            <li class="group__item">
+              <label class="group__label">
+                Фамилия:
+                <input type="text" class="group__text" name="second-name" placeholder="Укажите фамилию*" required>
+              </label>
+            </li>
+            <li class="group__item">
+              <label class="group__label">
+                Отчество:
+                <input type="text" class="group__text" name="father-name" placeholder="Отчество, если желаете">
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="parameters__group group">
+          <legend class="group__legend">Тел</legend>
+          <input class="group__tel" type="tel" name="phone" placeholder="+7 XXX XXX XX XX*" required>
+        </fieldset>
+        <fieldset class="parameters__group group">
+          <legend class="group__legend">E-mail</legend>
+          <input class="group__email" type="email" placeholder="Ваш Email*" required>
+        </fieldset>
+        <fieldset class="parameters__group group">
+          <legend class="group__legend">Доп</legend>
+          <textarea name="wish" cols="30" rows="10" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+        </fieldset>
+        <p class="parameters__star">*Поля обязательны для заполнения</p>
+        <button class="parameters__submit button" type="submit">Отправить заказ</button>
+      </form>
+    </section>
+  </main>
+  <footer class="page-footer">
+    <div class="page-footer__social social">
+      <ul class="social__list">
+        <li class="social__item">
+          <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--facebook" href="https://www.fecebook.com/htmlacademy">Мы в Фейсбуке</a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--twitter" href="https://www.twitter.com/htmlacademy">Мы в Твиттере</a>
+        </li>
+      </ul>
+    </div>
+    <div class="page-footer__copyright copyright">
+      <b class="copyright__text">Разработано:</b>
+      <a class="copyright__link button" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+    </div>
+  </footer>
+</body>
+
+</html>
