@@ -1,0 +1,28 @@
+.products {
+  padding: 0 30px;
+
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: 700;
+  color: #000000;
+}
+
+.products__link {
+  color: #000000;
+  text-decoration: none;
+}
+
+.products__name {
+  padding-left: 28px;
+
+  font-size: 17px;
+  line-height: 24px;
+}
+
+.products__description {
+  padding-left: 28px;
+
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 30px;
+  color: #444444;
+}

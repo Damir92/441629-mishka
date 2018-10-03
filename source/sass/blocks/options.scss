@@ -1,0 +1,34 @@
+.options {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: 700;
+  color: #000000;
+}
+
+.options__description {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 24px;
+  color: #444444;
+}
+
+.options__group {
+  border: none;
+  border-top: 1px solid #63d1bb;
+}
+
+.options__legend {
+  font-size: 17px;
+  line-height: 16px;
+  color: #63d1bb;
+}
+
+.options__label {
+  font-size: 17px;
+  line-height: 18px;
+}
+
+.options__note {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+}

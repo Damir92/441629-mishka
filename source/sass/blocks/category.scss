@@ -1,0 +1,22 @@
+.category__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.category__link {
+  display: block;
+  padding: 30px;
+
+  font-size: 19px;
+  line-height: 24px;
+  color: #ffffff;
+  text-decoration: none;
+
+  background-color: #63d1bb;
+}
+
+.category__link--dark {
+  background-color: #56c3b2;
+}
