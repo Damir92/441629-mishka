@@ -1,19 +1,21 @@
 .feature {
   padding: 30px;
+  padding-bottom: 36px;
 }
 
 .feature__title {
   margin: 0;
+  margin-bottom: 5px;
 
   font-size: 25px;
-  line-height: 30px;
+  line-height: $big-line;
 }
 
 .feature__promo {
   margin: 0;
 
-  font-size: 17px;
-  line-height: 20px;
+  font-size: $popular-size;
+  line-height: $little-line;
   color: #63d1bb;
   text-transform: uppercase;
 }
@@ -21,19 +23,38 @@
 .feature__description {
   font-weight: 400;
   font-size: 15px;
-  line-height: 24px;
+  line-height: $middle-line;
   color: #444444;
 }
 
 .feature__table {
+  width: 260px;
+  margin-bottom: 28px;
+
+  border-collapse: collapse;
   font-weight: 400;
   font-size: 15px;
-  line-height: 20px;
+  line-height: $little-line;
   color: #444444;
 }
 
+.feature__row {
+  border-bottom: 1px solid #ececec;
+}
+
+.feature__field {
+  padding: 10px 0;
+}
+
+.feature__value {
+  padding: 10px 0;
+}
+
 .feature__price {
-  font-size: 17px;
-  line-height: 24px;
+  margin: 25px 0;
+
+  font-size: $popular-size;
+  line-height: $middle-line;
+  text-align: center;
   color: #444444;
 }

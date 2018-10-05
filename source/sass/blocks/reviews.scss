@@ -6,25 +6,29 @@
   margin: 0;
 
   font-size: 25px;
-  line-height: 30px;
+  line-height: $big-line;
 }
 
 .reviews__item {
   margin: 0;
+
+  font-weight: 400;
 }
 
 .reviews__text {
   font-size: 15px;
-  line-height: 30px;
+  line-height: $big-line;
   color: #444444;
 }
 
 .reviews__author-name {
-  font-size: 17px;
+  font-weight: 700;
+  font-size: $popular-size;
   font-style: normal;
 }
 
 .reviews__link-name {
   font-weight: 400;
-  font-size: 17px;
+  font-size: $popular-size;
+  line-height: 40px;
 }

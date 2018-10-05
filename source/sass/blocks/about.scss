@@ -4,16 +4,22 @@
 
 .about__title {
   margin: 0;
+  margin-bottom: 30px;
 
   font-size: 25px;
-  line-height: 30px;
+  line-height: $big-line;
 }
 
 .about__list {
   margin: 0;
+  margin-bottom: 50px;
   padding: 0;
 
   list-style: none;
-  font-size: 17px;
-  line-height: 20px;
+  font-size: $popular-size;
+  line-height: $little-line;
+}
+
+.about__item {
+  padding-top: 55px;
 }

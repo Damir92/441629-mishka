@@ -5,13 +5,13 @@
 .video__title {
   padding-left: 90px;
 
-  font-size: 17px;
+  font-size: $popular-size;
   line-height: 24px;
 }
 
 .video__description {
   font-weight: 400;
   font-size: 13px;
-  line-height: 24px;
+  line-height: $middle-line;
   color: #444444;
 }

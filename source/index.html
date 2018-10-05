@@ -4,16 +4,18 @@
 <head>
   <meta charset="utf-8">
   <title>Магазин «Мишка»</title>
-  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body class="page-body">
   <header class="page-header">
     <div class="page-header__wrapper">
       <a class="page-header__logo">
         <img class="page-header__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Магазин Мишка">
       </a>
-      <button class="page-header__toggle" type="button">Открыть меню</button>
+      <button class="page-header__toggle page-header__toggle--open" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
     </div>
     <nav class="main-menu">
       <ul class="main-menu__list site-list">
@@ -33,7 +35,7 @@
     </nav>
   </header>
   <main class="page-main">
-    <h1 class="page-main__title page-main__title--background">Милые штучки ручной работы для дома</h1>
+    <h1 class="page-main__title page-main__title--background">Милые штуки ручной<br> работы для дома</h1>
     <section class="category">
       <h2 class="visually-hidden">Категории товаров</h2>
       <ul class="category__list">
@@ -47,20 +49,20 @@
     </section>
     <section class="feature">
       <header class="feature__header">
-        <h2 class="feature__title">Вязанные корзинки</h2>
+        <h2 class="feature__title">Вязаные корзинки</h2>
         <p class="feature__promo">Товар недели</p>
       </header>
       <p class="feature__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
       <table class="feature__table">
-        <tr>
+        <tr class="feature__row">
           <td class="feature__field">Цвет:</td>
           <td class="feature__value">«Тиффани»/серый</td>
         </tr>
-        <tr>
+        <tr class="feature__row">
           <td class="feature__field">Диаметр:</td>
           <td class="feature__value">25 см</td>
         </tr>
-        <tr>
+        <tr class="feature__row">
           <td class="feature__field">Высота:</td>
           <td class="feature__value">15 см</td>
         </tr>
@@ -74,12 +76,12 @@
     <section class="about">
       <h2 class="about__title">Коротко о нас:</h2>
       <ul class="about__list">
-        <li class="about__item about__item--ecology">Экологически чистые материалы</li>
-        <li class="about__item about__item--style">Скандинаский стиль по российской цене</li>
-        <li class="about__item about__item--likes">Увеличивает лайки на фотографиях</li>
-        <li class="about__item about__item--manually">Связано вручную с любовью и умилением</li>
+        <li class="about__item about__item--ecology">Экологически<br>чистые материалы</li>
+        <li class="about__item about__item--style">Скандинаский стиль<br>по российской цене</li>
+        <li class="about__item about__item--likes">Увеличивает лайки<br>на фотографиях</li>
+        <li class="about__item about__item--manually">Связано вручную с<br>любовью и умилением</li>
         <li class="about__item about__item--domestic">Поддержка отечественного производителя</li>
-        <li class="about__item about__item--gift">Поставляется в подарочной упаковке</li>
+        <li class="about__item about__item--gift">Поставляется в<br>подарочной упаковке</li>
       </ul>
     </section>
     <section class="reviews">
