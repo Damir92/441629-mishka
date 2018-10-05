@@ -1,0 +1,33 @@
+.reviews {
+  padding: 0 30px;
+}
+
+.reviews__title {
+  margin: 0;
+
+  font-size: 25px;
+  line-height: $big-line;
+}
+
+.reviews__item {
+  margin: 0;
+
+  font-weight: 400;
+}
+
+.reviews__text {
+  font-size: 15px;
+  line-height: $big-line;
+  color: $text-color;
+}
+
+.reviews__author-name {
+  font-weight: 700;
+  font-size: $basic-font-size;
+  font-style: normal;
+}
+
+.reviews__link-name {
+  font-weight: 400;
+  line-height: 40px;
+}

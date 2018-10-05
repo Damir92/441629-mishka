@@ -1,0 +1,60 @@
+.feature {
+  padding: 30px;
+  padding-bottom: 36px;
+}
+
+.feature__title {
+  margin: 0;
+  margin-bottom: 5px;
+
+  font-size: 25px;
+  line-height: $big-line;
+}
+
+.feature__promo {
+  margin: 0;
+
+  font-size: $basic-font-size;
+  line-height: $little-line;
+  color: #63d1bb;
+  text-transform: uppercase;
+}
+
+.feature__description {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: $middle-line;
+  color: $text-color;
+}
+
+.feature__table {
+  width: 260px;
+  margin-bottom: 28px;
+
+  border-collapse: collapse;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: $little-line;
+  color: #444444;
+}
+
+.feature__row {
+  border-bottom: 1px solid #ececec;
+}
+
+.feature__field {
+  padding: 10px 0;
+}
+
+.feature__value {
+  padding: 10px 0;
+}
+
+.feature__price {
+  margin: 25px 0;
+
+  font-size: $basic-font-size;
+  line-height: $middle-line;
+  text-align: center;
+  color: #444444;
+}

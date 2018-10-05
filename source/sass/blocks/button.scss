@@ -1,0 +1,21 @@
+.button {
+  display: block;
+  box-sizing: border-box;
+  width: 260px;
+  padding: 14px 0;
+
+  font-size: $basic-font-size;
+  line-height: $little-line;
+  vertical-align: middle;
+  text-align: center;
+  color: $text-color;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  background-color: #ffffff;
+  border: 2px solid #444444;
+}
+
+.button--narrow {
+  width: 192px;
+}

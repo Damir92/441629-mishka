@@ -1,0 +1,36 @@
+.options {
+  color: $title-color;
+}
+
+.options__description {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: $middle-line;
+  color: $text-color;
+}
+
+.options__group {
+  border: none;
+  border-top: 1px solid #63d1bb;
+}
+
+.options__legend {
+  font-size: $basic-font-size;
+  line-height: 16px;
+  color: #63d1bb;
+}
+
+.options__label {
+  font-size: $basic-font-size;
+  line-height: 18px;
+}
+
+.options__note {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.options__submit {
+  margin: 0 auto;
+}

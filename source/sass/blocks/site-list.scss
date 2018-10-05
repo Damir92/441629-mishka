@@ -1,0 +1,21 @@
+.site-list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+  font-size: $basic-font-size;
+  line-height: $middle-line;
+}
+
+.site-list__item {
+  border-bottom: 1px solid #ececec;
+}
+
+.site-list__link {
+  display: block;
+  padding: 30px;
+  padding-left: 75px;
+
+  color: $title-color;
+  text-decoration: none;
+}

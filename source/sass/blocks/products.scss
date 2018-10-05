@@ -1,0 +1,26 @@
+.products {
+  padding: 0 30px;
+
+  color: #000000;
+}
+
+.products__link {
+  color: $title-color;
+  text-decoration: none;
+}
+
+.products__name {
+  padding-left: 28px;
+
+  font-size: $basic-font-size;
+  line-height: $middle-line;
+}
+
+.products__description {
+  padding-left: 28px;
+
+  font-weight: 400;
+  font-size: 13px;
+  line-height: $big-line;
+  color: $text-color;
+}

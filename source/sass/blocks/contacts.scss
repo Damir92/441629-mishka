@@ -1,0 +1,21 @@
+.contacts__title {
+  margin: 0;
+  padding: 0 30px;
+
+  font-size: 18px;
+  line-height: $big-line;
+}
+
+.contacts__email,
+.contacts__address {
+  padding: 0 30px;
+
+  font-weight: 400;
+  font-size: 15px;
+  line-height: $big-line;
+  color: $text-color;
+}
+
+.contacts__write-link {
+  margin: 0 auto;
+}

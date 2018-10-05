@@ -1,0 +1,21 @@
+.video {
+  padding: 0 30px;
+}
+
+.video__title {
+  padding-left: 90px;
+
+  font-size: $basic-font-size;
+  line-height: 24px;
+}
+
+.video__description {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: $middle-line;
+  color: $text-color;
+}
+
+.video__link {
+  margin: 0 auto;
+}

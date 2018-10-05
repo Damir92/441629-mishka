@@ -1,0 +1,23 @@
+.page-main {
+  color: #000000;
+}
+
+.page-main__title {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 70px 30px;
+
+  font-size: 27px;
+  line-height: $big-line;
+  text-align: center;
+
+  background-color: #f1f1f1;
+}
+
+.page-main__title--background {
+  min-height: 280px;
+
+  background-image: url("../img/hero-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% -18px;
+}
