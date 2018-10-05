@@ -1,12 +1,12 @@
 .options {
-  color: #000000;
+  color: $title-color;
 }
 
 .options__description {
   font-weight: 400;
   font-size: 13px;
   line-height: $middle-line;
-  color: #444444;
+  color: $text-color;
 }
 
 .options__group {
@@ -15,13 +15,13 @@
 }
 
 .options__legend {
-  font-size: $popular-size;
+  font-size: $basic-font-size;
   line-height: 16px;
   color: #63d1bb;
 }
 
 .options__label {
-  font-size: $popular-size;
+  font-size: $basic-font-size;
   line-height: 18px;
 }
 

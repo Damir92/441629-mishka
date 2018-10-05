@@ -5,7 +5,7 @@
 .video__title {
   padding-left: 90px;
 
-  font-size: $popular-size;
+  font-size: $basic-font-size;
   line-height: 24px;
 }
 
@@ -13,5 +13,9 @@
   font-weight: 400;
   font-size: 13px;
   line-height: $middle-line;
-  color: #444444;
+  color: $text-color;
+}
+
+.video__link {
+  margin: 0 auto;
 }

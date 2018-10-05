@@ -5,14 +5,14 @@
 }
 
 .products__link {
-  color: #000000;
+  color: $title-color;
   text-decoration: none;
 }
 
 .products__name {
   padding-left: 28px;
 
-  font-size: $popular-size;
+  font-size: $basic-font-size;
   line-height: $middle-line;
 }
 
@@ -22,5 +22,5 @@
   font-weight: 400;
   font-size: 13px;
   line-height: $big-line;
-  color: #444444;
+  color: $text-color;
 }

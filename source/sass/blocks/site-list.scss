@@ -3,9 +3,7 @@
   padding: 0;
 
   list-style: none;
-  font-family: "Open Sans", "Arial", sans-serif;
-  font-weight: 700;
-  font-size: $popular-size;
+  font-size: $basic-font-size;
   line-height: $middle-line;
 }
 
@@ -18,6 +16,6 @@
   padding: 30px;
   padding-left: 75px;
 
-  color: #000000;
+  color: $title-color;
   text-decoration: none;
 }

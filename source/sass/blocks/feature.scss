@@ -14,7 +14,7 @@
 .feature__promo {
   margin: 0;
 
-  font-size: $popular-size;
+  font-size: $basic-font-size;
   line-height: $little-line;
   color: #63d1bb;
   text-transform: uppercase;
@@ -24,7 +24,7 @@
   font-weight: 400;
   font-size: 15px;
   line-height: $middle-line;
-  color: #444444;
+  color: $text-color;
 }
 
 .feature__table {
@@ -53,7 +53,7 @@
 .feature__price {
   margin: 25px 0;
 
-  font-size: $popular-size;
+  font-size: $basic-font-size;
   line-height: $middle-line;
   text-align: center;
   color: #444444;

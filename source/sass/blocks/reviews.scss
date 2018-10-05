@@ -18,17 +18,16 @@
 .reviews__text {
   font-size: 15px;
   line-height: $big-line;
-  color: #444444;
+  color: $text-color;
 }
 
 .reviews__author-name {
   font-weight: 700;
-  font-size: $popular-size;
+  font-size: $basic-font-size;
   font-style: normal;
 }
 
 .reviews__link-name {
   font-weight: 400;
-  font-size: $popular-size;
   line-height: 40px;
 }
