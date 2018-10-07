@@ -19,3 +19,9 @@
 .button--narrow {
   width: 192px;
 }
+
+@media (min-width: $tablet-width) {
+  .button {
+    width: 290px;
+  }
+}

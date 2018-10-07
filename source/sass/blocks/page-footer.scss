@@ -1,3 +1,36 @@
 .page-footer {
   background-color: #f1f1f1;
 }
+
+.page-footer__logo {
+  display: none;
+}
+
+.page-footer__social {
+  box-sizing: border-box;
+  width: $mobile-width;
+  margin: 0 auto;
+  padding: 0 $mobile-padding;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer__logo {
+    display: block;
+  }
+
+  .page-footer__wrap {
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    width: $tablet-width;
+    margin: 0 auto;
+    padding: 0 $tablet-padding;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer__wrap {
+    width: $desktop-width;
+    padding: 0 $desktop-padding;
+  }
+}
