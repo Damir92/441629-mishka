@@ -1,4 +1,7 @@
 .about {
+  box-sizing: border-box;
+  width: $mobile-width;
+  margin: 0 auto;
   padding: 0 30px;
 }
 
@@ -22,4 +25,48 @@
 
 .about__item {
   padding-top: 55px;
+}
+
+@media (min-width: $tablet-width) {
+  .about {
+    width: $tablet-width;
+    padding: 0 $tablet-padding;
+  }
+
+  .about__title {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .about__list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 500px;
+  }
+
+  .about__item {
+    width: $tablet-width / 2 - $tablet-padding;
+    padding-top: 110px;
+
+    font-size: 20px;
+    line-height: 22px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .about {
+    width: $desktop-width;
+    padding: 0 $desktop-padding;
+    padding-left: 225px;
+  }
+
+  .about__title {
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .about__item {
+    width: 350px;
+  }
 }

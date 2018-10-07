@@ -1,5 +1,21 @@
+.copyright {
+  box-sizing: border-box;
+  width: $mobile-width;
+  margin: 0 auto;
+  padding: 0 $mobile-padding;
+
+  text-align: center;
+}
+
 .copyright__text {
   font-size: 19px;
   line-height: 18px;
   color: #000000;
+}
+
+@media (min-width: $tablet-width) {
+  .copyright {
+    width: auto;
+    padding: 0;
+  }
 }
