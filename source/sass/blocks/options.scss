@@ -3,6 +3,10 @@
 }
 
 .options__description {
+  box-sizing: border-box;
+  width: $mobile-width;
+  padding: 0 $mobile-padding;
+
   font-weight: 400;
   font-size: 13px;
   line-height: $middle-line;
@@ -10,22 +14,68 @@
 }
 
 .options__group {
+  box-sizing: border-box;
+  width: $mobile-width;
+  // border-top: 1px solid #63d1bb;
+  margin: 0 auto;
+  padding: 0 $mobile-padding;
+
   border: none;
-  border-top: 1px solid #63d1bb;
 }
 
 .options__legend {
+  display: block;
+
   font-size: $basic-font-size;
   line-height: 16px;
   color: #63d1bb;
 }
 
+.options__legend--inside {
+  padding: 0;
+}
+
+.options__legend--area {
+  width: $mobile-width - $mobile-padding * 2;
+  margin: 0 auto;
+}
+
+.options__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
 .options__label {
+  display: block;
+
   font-size: $basic-font-size;
   line-height: 18px;
 }
 
+.options__label--box {
+  padding-left: 60px;
+}
+
+.options__input {
+  box-sizing: border-box;
+  width: $mobile-width - $mobile-padding * 2;
+  margin: 0 auto;
+}
+
+.options__input--wishes {
+  display: block;
+  width: $mobile-width - $mobile-padding * 2;
+  margin: 0 auto;
+}
+
 .options__note {
+  box-sizing: border-box;
+  width: $mobile-width;
+  margin: 0 auto;
+  padding: 0 $mobile-padding;
+
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;
@@ -33,4 +83,67 @@
 
 .options__submit {
   margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .options__description {
+    width: $tablet-width;
+    margin: 0 auto;
+    padding: $tablet-padding;
+
+    font-size: $basic-font-size;
+    line-height: $big-line;
+  }
+
+  .options__group {
+    display: flex;
+    box-sizing: border-box;
+    width: $tablet-width;
+    padding: 0 $tablet-padding;
+  }
+
+  .options__list {
+    width: 500px;
+  }
+
+  .options__wrap {
+    display: flex;
+  }
+
+  .options__wrap--buttom {
+    box-sizing: border-box;
+    width: $tablet-width;
+    padding: 0 $tablet-padding;
+  }
+
+  .options__wrap--bg {
+    background-color: #f1f1f1;
+  }
+
+  .options__legend--area {
+    width: 167px;
+    margin: 0;
+  }
+
+  .options__wrap--area {
+    display: flex;
+    justify-content: flex-start;
+    box-sizing: border-box;
+    width: $tablet-width;
+    margin: 0 auto;
+    padding: 20px $tablet-padding;
+  }
+
+  .options__input--wishes {
+    width: 500px;
+    margin: 0;
+  }
+
+  .options__submit {
+    margin: 0;
+  }
+
+  .options__note {
+    margin: 0;
+  }
 }
