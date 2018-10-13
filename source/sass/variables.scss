@@ -1,5 +1,11 @@
 // width of devices
 $mobile-width: 320px;
+$tablet-width: 768px;
+$desktop-width: 1150px;
+
+$mobile-data-width: 260px;
+$tablet-data-width: 668px;
+$desktop-data-width: 1050px;
 
 // popular line-height
 $little-line: 20px;
@@ -12,3 +18,11 @@ $basic-font-size: 17px;
 // color
 $text-color: #444444;
 $title-color: #000000;
+
+// padding/margin
+$mobile-padding: 30px;
+$mobile-margin: 30px;
+$tablet-padding: 50px;
+$desktop-padding: 50px;
+$tablet-margin: 50px;
+$desktop-margin: 50px;

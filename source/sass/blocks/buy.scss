@@ -1,8 +1,20 @@
 .buy {
-  padding-left: 28px;
+  padding: 28px;
+
+  border-bottom: 1px solid #ececec;
 }
 
 .buy__price {
   font-size: 15px;
   line-height: $middle-line;
+}
+
+@media (min-width: $tablet-width) {
+  .buy {
+    border: none;
+  }
+
+  .buy__price {
+    font-size: 17px;
+  }
 }

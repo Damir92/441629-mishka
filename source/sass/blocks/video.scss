@@ -1,5 +1,7 @@
 .video {
-  padding: 0 30px;
+  @include mobile-size;
+
+  margin: 0 auto;
 }
 
 .video__title {
@@ -18,4 +20,54 @@
 
 .video__link {
   margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .video {
+    @include tablet-size;
+
+    display: flex;
+    flex-direction: column;
+  }
+
+  .video__title,
+  .video__description,
+  .video__link {
+    margin: 0 40px;
+  }
+
+  .video__link {
+    width: auto;
+  }
+
+  .video__window {
+    order: -1;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .video {
+    @include desktop-size;
+
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: 455px;
+  }
+
+  .video__title {
+    width: 150px;
+  }
+
+  .video__description {
+    width: 280px;
+  }
+
+  .video__window {
+    width: 682px;
+    height: 455px;
+  }
+
+  .video__link {
+    width: 230px;
+  }
 }

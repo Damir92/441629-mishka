@@ -1,4 +1,5 @@
 .category__list {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 
@@ -20,4 +21,37 @@
 
 .category__link--dark {
   background-color: #56c3b2;
+}
+
+@media (min-width: $tablet-width) {
+  .category {
+    background-color: #f9f9f9;
+  }
+
+  .category__list {
+    display: flex;
+    width: $tablet-width;
+    margin: 0 auto;
+    padding: 0 $tablet-padding;
+  }
+
+  .category__link {
+    box-sizing: border-box;
+    width: $tablet-data-width / 2;
+    padding: 33px 150px 33px 35px;
+
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .category__list {
+    @include desktop-size;
+  }
+
+  .category__link {
+    width: $desktop-width / 2 - $desktop-padding;
+    padding-right: 310px;
+  }
 }
