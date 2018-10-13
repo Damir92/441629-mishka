@@ -4,6 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <title>Вязание на заказ</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -28,7 +30,7 @@
           <a class="site-list__link" href="catalog.html">Каталог товаров</a>
         </li>
         <li class="site-list__item site-list__item--bottom site-list__item--order">
-          <a class="site-list__link" href="#">Вязание на заказ</a>
+          <a class="site-list__link" href="form.html">Вязание на заказ</a>
         </li>
         <li class="site-list__item site-list__item--search">
           <a class="site-list__link" href="#">Поиск по сайту</a>
@@ -61,13 +63,15 @@
             <legend class="options__legend">Тип</legend>
             <ul class="options__list">
               <li class="options__item">
-                <label class="options__label options__label--box">
-                  <input class="options__input visually-hidden" type="radio" name="type" value="interior" checked> Аксессуар для интерьера
+                <input class="options__input visually-hidden" id="interior" type="radio" name="type" value="interior" checked>
+                <label class="options__label options__label--radio options__label--box" for="interior">
+                  Аксессуар для интерьера
                 </label>
               </li>
               <li class="options__item">
-                <label class="options__label options__label--box">
-                  <input class="options__input visually-hidden" type="radio" name="type" value="toy"> Детская игрушка
+                <input class="options__input visually-hidden" id="toy" type="radio" name="type" value="toy">
+                <label class="options__label options__label--radio options__label--box" for="toy">
+                  Детская игрушка
                 </label>
               </li>
             </ul>
@@ -76,33 +80,33 @@
         <div class="options__wrap options__wrap--bg">
           <fieldset class="options__group">
             <legend class="options__legend">Цвет</legend>
-            <ul class="options__list">
-              <li class="options__item">
+            <ul class="options__list options__list--flex">
+              <li class="options__item options__item--checkbox">
                 <label class="options__label options__label--box">
                   <input class="options__input visually-hidden" type="checkbox" name="white" value="white" checked> Белый
                 </label>
               </li>
-              <li class="options__item">
+              <li class="options__item options__item--checkbox">
                 <label class="options__label options__label--box">
                   <input class="options__input visually-hidden" type="checkbox" name="gray" value="gray" checked> Серый
                 </label>
               </li>
-              <li class="options__item">
+              <li class="options__item options__item--checkbox">
                 <label class="options__label options__label--box">
                   <input class="options__input visually-hidden" type="checkbox" name="tiffany" value="tiffany"> «Тиффани»
                 </label>
               </li>
-              <li class="options__item">
+              <li class="options__item options__item--checkbox">
                 <label class="options__label options__label--box">
                   <input class="options__input visually-hidden" type="checkbox" name="black" value="black"> Черный
                 </label>
               </li>
-              <li class="options__item">
+              <li class="options__item options__item--checkbox">
                 <label class="options__label options__label--box">
                   <input class="options__input visually-hidden" type="checkbox" name="pink" value="pink"> Розовый
                 </label>
               </li>
-              <li class="options__item">
+              <li class="options__item options__item--checkbox">
                 <label class="options__label options__label--box">
                   <input class="options__input visually-hidden" type="checkbox" name="orange" value="orange"> Оранжевый
                 </label>
@@ -137,27 +141,27 @@
         </div>
         <div class="options__wrap options__wrap--bg">
           <fieldset class="options__group">
-            <ul class="options__list">
-              <li class="options__item">
-                <label class="options__legend options__legend--inside">
+            <ul class="options__list options__list--special">
+              <li class="options__item options__item--wrap">
+                <label class="options__legend options__legend--special" for="phone">
                   Тел
-                  <input class="options__input" type="tel" name="phone" placeholder="+7 XXX XXX XX XX*" required>
                 </label>
+                  <input class="options__input--special" id="phone" type="tel" name="phone" placeholder="+7 XXX XXX XX XX*" required>
               </li>
-              <li class="options__item">
-                <label class="options__legend options__legend--inside">
+              <li class="options__item options__item--wrap">
+                <label class="options__legend options__legend--special" for="email">
                   E-mail
-                  <input class="options__input" type="email" placeholder="Ваш Email*" required>
                 </label>
+                  <input class="options__input--special" type="email" id="email" placeholder="Ваш Email*" required>
               </li>
             </ul>
           </fieldset>
         </div>
         <div class="options__wrap options__wrap--area">
-          <label class="options__legend options__legend--area" for="wishes">
+          <label class="options__legend options__legend--special" for="wishes">
             Доп
           </label>
-          <textarea class="options__input--wishes" id="wishes" name="wish" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+          <textarea class="options__input--special" id="wishes" name="wish" placeholder="Опишите все ваши пожелания к заказу"></textarea>
         </div>
         <div class="options__wrap options__wrap--buttom">
           <p class="options__note">*Поля обязательны для заполнения</p>

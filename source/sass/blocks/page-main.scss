@@ -16,6 +16,7 @@
 
 .page-main__title--background {
   min-height: 280px;
+  margin: 0;
 
   background-image: url("../img/hero-mobile@1x.jpg");
   background-repeat: no-repeat;
@@ -25,27 +26,33 @@
 @media (min-width: $tablet-width) {
   .page-main__title {
     min-width: $tablet-width;
-    padding-left: 50px;
-    padding-right: 50px;
     margin-top: -48px;
+    padding-right: $tablet-padding;
+    padding-left: $tablet-padding;
   }
 
   .page-main__title--background {
     height: 635px;
+    padding-top: 160px;
 
-    border-top: 1px solid #ececec;
+    font-size: 43px;
+    line-height: 50px;
+
     background-color: #f9f9f9;
     background-image: url("../img/hero-tablet@1x.jpg");
     background-position: 50% 5px;
-    padding-top: 160px;
-    font-size: 43px;
-    line-height: 50px;
+    border-top: 1px solid #ececec;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .page-main__title {
+    min-width: $desktop-width;
+  }
+
   .page-main__title--background {
     height: 635px;
+
     font-size: 53px;
     line-height: 57px;
   }

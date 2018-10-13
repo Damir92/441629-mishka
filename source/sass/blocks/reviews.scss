@@ -1,8 +1,7 @@
 .reviews {
-  box-sizing: border-box;
-  width: $mobile-width;
+  @include mobile-size;
+
   margin: 0 auto;
-  padding: 0 $mobile-padding;
 }
 
 .reviews__title {
@@ -62,7 +61,7 @@
   }
 
   .reviews__item {
-    width: $tablet-width - $tablet-padding * 2;
+    width: $tablet-data-width;
 
     font-size: 17px;
   }

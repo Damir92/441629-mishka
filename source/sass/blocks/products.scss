@@ -1,8 +1,7 @@
 .products {
-  box-sizing: border-box;
-  width: $mobile-width;
+  @include mobile-size;
+
   margin: 0 auto;
-  padding: 0 $mobile-padding;
 
   color: #000000;
 }
@@ -39,8 +38,7 @@
 
 @media (min-width: $tablet-width) {
   .products {
-    width: $tablet-width;
-    padding: 0 $tablet-padding;
+    @include tablet-size;
   }
 
   .products__item {
@@ -67,10 +65,10 @@
 
 @media (min-width: $desktop-width) {
   .products {
+    @include desktop-size;
+
     display: flex;
     justify-content: space-between;
-    width: $desktop-width;
-    padding: 0 $desktop-padding;
   }
 
   .products__item {

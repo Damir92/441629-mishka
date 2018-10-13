@@ -37,7 +37,7 @@
 
   .category__link {
     box-sizing: border-box;
-    width: $tablet-width / 2 - $tablet-padding;
+    width: $tablet-data-width / 2;
     padding: 33px 150px 33px 35px;
 
     font-size: 20px;
@@ -47,8 +47,7 @@
 
 @media (min-width: $desktop-width) {
   .category__list {
-    width: $desktop-width;
-    padding: 0 $desktop-padding;
+    @include desktop-size;
   }
 
   .category__link {

@@ -3,9 +3,7 @@
 }
 
 .options__description {
-  box-sizing: border-box;
-  width: $mobile-width;
-  padding: 0 $mobile-padding;
+  @include mobile-size;
 
   font-weight: 400;
   font-size: 13px;
@@ -14,17 +12,16 @@
 }
 
 .options__group {
-  box-sizing: border-box;
-  width: $mobile-width;
+  @include mobile-size;
   // border-top: 1px solid #63d1bb;
+
   margin: 0 auto;
-  padding: 0 $mobile-padding;
 
   border: none;
 }
 
 .options__legend {
-  display: block;
+  box-sizing: border-box;
 
   font-size: $basic-font-size;
   line-height: 16px;
@@ -36,22 +33,29 @@
 }
 
 .options__legend--area {
-  width: $mobile-width - $mobile-padding * 2;
+  width: $mobile-data-width;
   margin: 0 auto;
 }
 
 .options__list {
-  margin: 0;
+  margin: 25px 0 0;
   padding: 0;
 
   list-style: none;
 }
 
+.options__item {
+  margin-bottom: 25px;
+}
+
 .options__label {
+  position: relative;
+
   display: block;
 
   font-size: $basic-font-size;
   line-height: 18px;
+  vertical-align: top;
 }
 
 .options__label--box {
@@ -60,21 +64,50 @@
 
 .options__input {
   box-sizing: border-box;
-  width: $mobile-width - $mobile-padding * 2;
+  width: $mobile-data-width;
   margin: 0 auto;
 }
 
-.options__input--wishes {
+.options__label--radio::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 36px;
+  height: 36px;
+
+  border: 2px solid #000000;
+  border-radius: 50%;
+}
+
+.options__input:checked + .options__label--radio::after {
+  content: "";
+  position: absolute;
+  top: 12px;
+  left: 12px;
+
+  width: 16px;
+  height: 16px;
+
+  background-color: #62d1ba;
+  border-radius: 50%;
+}
+
+.options__input--special {
   display: block;
-  width: $mobile-width - $mobile-padding * 2;
+  width: $mobile-data-width;
   margin: 0 auto;
+}
+
+.options__wrap--area {
+  @include mobile-size;
 }
 
 .options__note {
-  box-sizing: border-box;
-  width: $mobile-width;
+  @include mobile-size;
+
   margin: 0 auto;
-  padding: 0 $mobile-padding;
 
   font-weight: 400;
   font-size: 14px;
@@ -87,54 +120,94 @@
 
 @media (min-width: $tablet-width) {
   .options__description {
-    width: $tablet-width;
+    @include tablet-size;
+
     margin: 0 auto;
-    padding: $tablet-padding;
 
     font-size: $basic-font-size;
     line-height: $big-line;
   }
 
   .options__group {
+    @include tablet-size;
+
     display: flex;
-    box-sizing: border-box;
-    width: $tablet-width;
-    padding: 0 $tablet-padding;
+    padding-top: 25px;
   }
 
   .options__list {
     width: 500px;
+    margin-top: -25px;
+    padding-left: 167px;
+  }
+
+  .options__list--flex {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .options__list--special {
+    display: block;
+    width: 100%;
+    padding-left: 0;
+  }
+
+  .options__item {
+    display: block;
+  }
+
+  .options__item--checkbox {
+    width: 250px;
+  }
+
+  .options__item--wrap {
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
 
   .options__wrap {
     display: flex;
+    padding-top: 50px;
   }
 
   .options__wrap--buttom {
-    box-sizing: border-box;
-    width: $tablet-width;
-    padding: 0 $tablet-padding;
+    @include tablet-size;
+
+    justify-content: space-between;
+    margin: 0 auto;
   }
 
   .options__wrap--bg {
     background-color: #f1f1f1;
   }
 
-  .options__legend--area {
+  .options__legend {
+    margin-bottom: -20px;
+  }
+
+  .options__legend--special {
+    display: block;
     width: 167px;
     margin: 0;
   }
 
-  .options__wrap--area {
-    display: flex;
-    justify-content: flex-start;
-    box-sizing: border-box;
-    width: $tablet-width;
-    margin: 0 auto;
-    padding: 20px $tablet-padding;
+  .options__legend--inside {
+    width: 167px;
   }
 
-  .options__input--wishes {
+  .options__wrap--area {
+    @include tablet-size;
+
+    justify-content: flex-start;
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .options__input--special {
+    box-sizing: border-box;
     width: 500px;
     margin: 0;
   }
@@ -144,6 +217,50 @@
   }
 
   .options__note {
+    order: 2;
+    width: auto;
     margin: 0;
+    padding: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .options__description {
+    width: $desktop-width;
+    padding-right: 225px;
+    padding-left: 225px;
+  }
+
+  .options__group {
+    @include desktop-size;
+
+    padding-top: 25px;
+  }
+
+  .options__legend {
+    width: 175px;
+    margin-bottom: 0;
+    padding-left: 60px;
+  }
+
+  .options__list {
+    width: 875px;
+  }
+
+  .options__input--special {
+    width: 700px;
+  }
+
+  .options__wrap--area {
+    @include desktop-size;
+
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .options__wrap--buttom {
+    @include desktop-size;
+
+    padding: 50px 225px;
   }
 }

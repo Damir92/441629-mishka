@@ -1,8 +1,7 @@
 .video {
-  box-sizing: border-box;
-  width: $mobile-width;
+  @include mobile-size;
+
   margin: 0 auto;
-  padding: 0 $mobile-padding;
 }
 
 .video__title {
@@ -25,10 +24,10 @@
 
 @media (min-width: $tablet-width) {
   .video {
+    @include tablet-size;
+
     display: flex;
     flex-direction: column;
-    width: $tablet-width;
-    padding: 0 $tablet-padding;
   }
 
   .video__title,
@@ -48,11 +47,11 @@
 
 @media (min-width: $desktop-width) {
   .video {
+    @include desktop-size;
+
     flex-wrap: wrap;
     justify-content: space-around;
-    width: $desktop-width;
     height: 455px;
-    padding: 0 $desktop-padding;
   }
 
   .video__title {
@@ -64,8 +63,8 @@
   }
 
   .video__window {
-    height: 455px;
     width: 682px;
+    height: 455px;
   }
 
   .video__link {

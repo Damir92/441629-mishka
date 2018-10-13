@@ -7,10 +7,9 @@
 }
 
 .page-footer__social {
-  box-sizing: border-box;
-  width: $mobile-width;
+  @include mobile-size;
+
   margin: 0 auto;
-  padding: 0 $mobile-padding;
 }
 
 @media (min-width: $tablet-width) {
@@ -19,18 +18,16 @@
   }
 
   .page-footer__wrap {
+    @include tablet-size;
+
     display: flex;
     align-items: center;
-    box-sizing: border-box;
-    width: $tablet-width;
     margin: 0 auto;
-    padding: 0 $tablet-padding;
   }
 }
 
 @media (min-width: $desktop-width) {
   .page-footer__wrap {
-    width: $desktop-width;
-    padding: 0 $desktop-padding;
+    @include desktop-size;
   }
 }

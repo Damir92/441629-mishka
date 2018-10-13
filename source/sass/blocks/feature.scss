@@ -71,10 +71,9 @@
 
 @media (min-width: $tablet-width) {
   .feature {
-    box-sizing: border-box;
-    width: $tablet-width;
+    @include tablet-size;
+
     margin: 0 auto;
-    padding: $tablet-padding;
   }
 
   .feature__header {
@@ -125,8 +124,7 @@
 
 @media (min-width: $desktop-width) {
   .feature {
-    width: $desktop-width;
-    padding: $desktop-padding;
+    @include desktop-size;
   }
 
   .feature__header {

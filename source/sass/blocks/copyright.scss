@@ -1,8 +1,7 @@
 .copyright {
-  box-sizing: border-box;
-  width: $mobile-width;
+  @include mobile-size;
+
   margin: 0 auto;
-  padding: 0 $mobile-padding;
 
   text-align: center;
 }

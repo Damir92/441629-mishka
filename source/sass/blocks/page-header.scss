@@ -1,20 +1,18 @@
 .page-header {
-  padding: 0;
   margin: 0 auto;
+  padding: 0;
+
   background-color: #ffffff;
 }
 
 @media (min-width: $tablet-width) {
   .page-header {
-    box-sizing: border-box;
-    width: $tablet-width;
-    padding: 0 50px;
+    @include tablet-size;
   }
 }
 
 @media (min-width: $desktop-width) {
   .page-header {
-    width: $desktop-width;
+    @include desktop-size;
   }
 }
-
