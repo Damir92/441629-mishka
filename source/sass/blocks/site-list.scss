@@ -14,12 +14,53 @@
 }
 
 .site-list__link {
+  position: relative;
+
   display: block;
-  padding: 30px;
+  padding: 27px;
   padding-left: 75px;
 
   color: $title-color;
   text-decoration: none;
+
+  &:hover .site-list__link-text {
+    opacity: 0.6;
+  }
+
+  &:hover .site-list__icon {
+    opacity: 1;
+
+    path {
+      fill: #63d1bb;
+    }
+  }
+
+  &:active .site-list__link-text {
+    opacity: 0.3;
+  }
+
+  &:active .site-list__icon {
+    opacity: 0.3;
+
+    path {
+      fill: #63d1bb;
+    }
+  }
+}
+
+.site-list__icon {
+  position: absolute;
+  top: 31px;
+  left: 31px;
+
+  width: 18px;
+  height: 18px;
+
+  opacity: 0.2;
+}
+
+.site-list__icon--cart {
+  width: 21px;
 }
 
 .site-list__item--promo {
@@ -28,6 +69,30 @@
 
 .site-list__item--desktop {
   display: none;
+}
+
+@media (max-width: $mobile-width-only) {
+  .site-list--closed .site-list__item--openable {
+    display: none;
+  }
+
+  .site-list--opened .site-list__item--openable {
+    display: block;
+  }
+
+  .site-list--nojs {
+    .site-list__toggle {
+      display: none;
+    }
+
+    .site-list__link--logo {
+      margin-right: 87px;
+    }
+
+    .site-list__item--openable {
+      display: block;
+    }
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -51,13 +116,13 @@
 
   .site-list__item--bottom {
     order: 1;
-    margin-top: 24px;
+    margin-top: 18px;
 
     font-size: 15px;
   }
 
   .site-list__item--search {
-    width: 83px;
+    width: 84px;
 
     font-size: 0;
 
@@ -66,12 +131,24 @@
   }
 
   .site-list__item--cart {
-    width: 265px;
+    width: 264px;
   }
 
   .site-list__link--cart {
-    margin: 35px 0;
-    padding: 0 0 0 80px;
+    margin: 31px 0 33px;
+    padding-left: 82px;
+  }
+
+  .site-list__link--search {
+    margin: 36px 0 28px;
+  }
+
+  .site-list__icon {
+    top: 0;
+  }
+
+  .site-list__icon--cart {
+    top: 3px;
   }
 
   .site-list__item--catalog {
@@ -92,18 +169,23 @@
     margin-left: auto;
   }
 
+  .site-list__item--cart {
+    width: 266px;
+  }
+
   .site-list__item--desktop {
     display: block;
     margin-right: 60px;
-    padding-top: 25px;
+    padding-top: 18px;
 
     font-size: 15px;
+    letter-spacing: 0.01em;
   }
 
   .site-list__item--bottom {
     order: -1;
     margin: 0;
-    padding: 35px 0;
+    padding: 32px 0;
 
     font-size: 17px;
   }
@@ -111,7 +193,7 @@
   .site-list__item--promo {
     order: 0;
     margin-left: auto;
-    padding: 25px 0 0;
+    padding: 18px 0 0;
 
     font-size: 15px;
   }

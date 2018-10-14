@@ -1,7 +1,9 @@
 .buy {
-  padding: 28px;
+  display: flex;
+  justify-content: space-between;
+  padding: 21px 28px 27px;
 
-  border-bottom: 1px solid #ececec;
+  // border-bottom: 1px solid #ececec;
 }
 
 .buy__price {
@@ -9,12 +11,41 @@
   line-height: $middle-line;
 }
 
+.buy__icon {
+  width: 21px;
+  height: 18px;
+
+  opacity: 0.2;
+
+  &:hover {
+    fill: #63d1bb;
+    opacity: 1;
+  }
+
+  &:active {
+    fill: #63d1bb;
+    opacity: 0.3;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .buy {
-    border: none;
+    width: 270px;
+    margin-top: auto;
+    margin-left: 31px;
+    padding: 22px 0 26px;
+
+    border-top: 1px solid #ececec;
   }
 
   .buy__price {
     font-size: 17px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .buy {
+    margin-left: 27px;
+    width: 256px;
   }
 }

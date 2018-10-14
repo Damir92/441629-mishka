@@ -1,6 +1,11 @@
 .feature {
   padding: $mobile-padding;
+  padding-top: 27px;
   padding-bottom: 36px;
+}
+
+.feature__header {
+  margin-bottom: 23px;
 }
 
 .feature__title {
@@ -22,6 +27,7 @@
 
 .feature__description {
   margin: 0;
+  margin-bottom: 17px;
 
   font-weight: 400;
   font-size: 15px;
@@ -31,7 +37,7 @@
 
 .feature__table {
   width: 260px;
-  margin-bottom: 28px;
+  margin-bottom: 29px;
 
   border-collapse: collapse;
   font-weight: 400;
@@ -45,15 +51,18 @@
 }
 
 .feature__field {
-  padding: 10px 0;
+  width: 98px;
+  padding: 10px 0 9px;
 }
 
 .feature__value {
-  padding: 10px 0;
+  padding: 10px 0 9px;
+
+  letter-spacing: -0.2px;
 }
 
 .feature__price {
-  margin: 25px 0;
+  margin: 22px 0 25px;
 
   font-size: $basic-font-size;
   line-height: $middle-line;
@@ -61,11 +70,7 @@
   color: #444444;
 }
 
-.feature__image--tablet {
-  display: none;
-}
-
-.feature__image--desktop {
+.feature__big-image {
   display: none;
 }
 
@@ -73,24 +78,26 @@
   .feature {
     @include tablet-size;
 
-    margin: 0 auto;
+    margin: 0 auto 40px;
   }
 
   .feature__header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 50px;
+    margin-bottom: 44px;
   }
 
   .feature__title {
+    margin-left: -3px;
+
     font-size: 43px;
     line-height: 50px;
   }
 
   .feature__promo {
     width: 100px;
-    margin-right: 25px;
+    margin-right: 12px;
 
     line-height: 17px;
     text-align: center;
@@ -104,27 +111,42 @@
   }
 
   .feature__description {
+    margin-bottom: 31px;
+
     font-size: 17px;
     line-height: 30px;
+  }
+
+  .feature__price {
+    font-size: 20px;
+    line-height: 24px;
   }
 
   .feature__image-wrap {
     display: none;
   }
 
-  .feature__image--tablet {
-    display: block;
-  }
-
   .feature__container {
     display: flex;
     justify-content: space-between;
+  }
+
+  .feature__big-image {
+    display: block;
+    padding-top: 8px;
+  }
+
+  .feature__big-image--pict {
+    width: 333px;
+    height: 404px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .feature {
     @include desktop-size;
+
+    padding-bottom: 80px;
   }
 
   .feature__header {
@@ -133,17 +155,18 @@
 
     flex-direction: row-reverse;
     justify-content: flex-end;
-    margin-top: 100px;
-    margin-bottom: -100px;
+    margin-top: 106px;
+    margin-bottom: -122px;
   }
 
   .feature__title {
     font-size: 53px;
     line-height: 57px;
+    letter-spacing: -0.3px;
   }
 
   .feature__promo {
-    margin: 0 35px;
+    margin: 4px 43px 0 32px;
   }
 
   .feature__wrap {
@@ -151,11 +174,22 @@
     margin-left: 175px;
   }
 
-  .feature__image--tablet {
-    display: none;
+  .feature__description {
+    margin-bottom: 42px;
   }
 
-  .feature__image--desktop {
-    display: block;
+  .feature__table {
+    width: 290px;
+    margin-bottom: 80px;
+  }
+
+  .feature__field,
+  .feature__value {
+    padding: 8px 0 11px;
+  }
+
+  .feature__big-image--pict {
+    width: 525px;
+    height: 636px;
   }
 }

@@ -8,20 +8,21 @@
 
 .logo__link {
   display: block;
-  margin: 22px;
+  margin: 22px 0 16px;
   margin-right: 67px;
-}
 
-.logo__image--tablet {
-  display: none;
-}
+  &:hover {
+    opacity: 0.6;
+  }
 
-.logo__image--desktop {
-  display: none;
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .logo__toggle {
   display: block;
+  margin-bottom: 2px;
   padding: 0;
 
   vertical-align: middle;
@@ -29,11 +30,13 @@
   background-color: #ffffff;
   background-repeat: no-repeat;
   border: none;
+  outline: none;
   cursor: pointer;
 
   &--open {
     width: 20px;
     height: 14px;
+    margin-left: 1px;
 
     background-image: url("../img/icon-menu-open.svg");
   }
@@ -41,8 +44,18 @@
   &--close {
     width: 21px;
     height: 20px;
+    margin-left: 0;
 
     background-image: url("../img/icon-menu-close.svg");
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 
@@ -52,15 +65,12 @@
   }
 
   .logo__link {
-    margin: 22px 100px 20px 0;
+    margin: 22px 100px 14px -2px;
   }
 
-  .logo__image--mobile {
-    display: none;
-  }
-
-  .logo__image--tablet {
-    display: block;
+  .logo__image {
+    width: 113px;
+    height: 46px;
   }
 
   .logo__toggle {
@@ -69,15 +79,17 @@
 }
 
 @media (min-width: $desktop-width) {
-  .logo__image--tablet {
-    display: none;
-  }
-
-  .logo__image--desktop {
-    display: block;
+  .logo__wrapper {
+    margin-right: 25px;
   }
 
   .logo__link {
     margin: 0;
+    margin-top: 9px;
+  }
+
+  .logo__image {
+    width: 149px;
+    height: 72px;
   }
 }
