@@ -1,10 +1,12 @@
-@import "../sass/normalize.css";
+// @import "../sass/normalize.scss";
+@import "normalize.scss";
 @import "variables.scss";
 @import "global.scss";
 @import "mixins.scss";
 @import "blocks/page-header.scss";
-@import "blocks/site-list.scss";
+@import "blocks/main-menu.scss";
 @import "blocks/logo.scss";
+@import "blocks/site-list.scss";
 @import "blocks/page-main.scss";
 @import "blocks/category.scss";
 @import "blocks/feature.scss";

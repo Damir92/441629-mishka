@@ -1,5 +1,4 @@
 .page-header {
-  margin: 0 auto;
   padding: 0;
 
   background-color: #ffffff;
@@ -7,12 +6,20 @@
 
 @media (min-width: $tablet-width) {
   .page-header {
-    @include tablet-size;
+    background-image: linear-gradient(#ffffff 88px, #ececec 88px, #ececec 89px, #fafafa 89px);
+
+    &--inner {
+      background-image: linear-gradient(#ffffff 88px, #ececec 88px, #ececec 89px, #f1f1f1 89px);
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
   .page-header {
-    @include desktop-size;
+    background-image: linear-gradient(#ffffff 88px, #ececec 88px, #ececec 89px, #fafafa 89px);
+
+    &--inner {
+      background-image: linear-gradient(#ffffff 88px, #ececec 88px, #ececec 89px, #f1f1f1 89px);
+    }
   }
 }
