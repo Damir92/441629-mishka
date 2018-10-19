@@ -85,12 +85,12 @@
   }
 }
 
-.options__item--wrap {
-  position: relative;
-}
-
 .options__item {
   min-height: 61px;
+
+  &--wrap {
+    position: relative;
+  }
 }
 
 .options__label {
@@ -102,11 +102,11 @@
   font-size: $basic-font-size;
   line-height: 18px;
   vertical-align: top;
-}
 
-.options__label--box {
-  padding-top: 10px;
-  padding-left: 62px;
+  &--box {
+    padding-top: 10px;
+    padding-left: 62px;
+  }
 }
 
 .options__input {
@@ -128,12 +128,6 @@
     padding-left: 16px;
 
     border-bottom-color: #62d1ba;
-  }
-
-  &--phone {
-    margin-bottom: 31px;
-
-    letter-spacing: 1.4px;
   }
 
   &--special {
@@ -171,6 +165,12 @@
     }
   }
 
+  &--phone {
+    margin-bottom: 31px;
+
+    letter-spacing: 1.4px;
+  }
+
   &--textarea {
     height: 142px;
     margin-top: 24px;
@@ -189,10 +189,10 @@
   right: 8px;
 
   opacity: 0.2;
-}
 
-.options__icon--email {
-  right: 4px;
+  &--email {
+    right: 4px;
+  }
 }
 
 .options__label--radio::before {
@@ -254,8 +254,6 @@
 .options__note {
   @include mobile-size;
 
-  margin: 0 auto;
-
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;
@@ -275,8 +273,7 @@
   .options__description {
     @include tablet-size;
 
-    margin: 0 auto;
-    margin-bottom: 2px;
+    margin-bottom: 6px;
 
     font-size: $basic-font-size;
     line-height: $big-line;
@@ -285,75 +282,78 @@
   .options__wrap {
     display: flex;
     margin: 0;
-    padding-top: 73px;
-    padding-bottom: 25px;
-  }
-
-  .options__wrap--buttom {
-    @include tablet-size;
-
-    justify-content: space-between;
-    margin: 0 auto;
-  }
-
-  .options__wrap--bg {
-    background-color: #f1f1f1;
-  }
-
-  .options__wrap--name {
-    padding-top: 69px;
-  }
-
-  .options__wrap--contacts {
-    padding-top: 54px;
-  }
-
-  .options__wrap--area {
-    @include tablet-size;
-
-    justify-content: flex-start;
-    margin: 0 auto;
     padding-top: 50px;
-    padding-bottom: 53px;
+    padding-bottom: 27px;
+
+    &--buttom {
+      @include tablet-size;
+
+      justify-content: space-between;
+    }
+
+    &--bg {
+      background-color: #f1f1f1;
+    }
+
+    &--name {
+      padding-top: 47px;
+    }
+
+    &--contacts {
+      padding-top: 52px;
+      padding-bottom: 25px;
+    }
+
+    &--area {
+      @include tablet-size;
+
+      justify-content: flex-start;
+      padding-top: 50px;
+      padding-bottom: 53px;
+    }
   }
 
   .options__group {
     @include tablet-size;
+    position: relative;
 
     display: flex;
-    // padding-top: 25px;
   }
 
   .options__list {
     width: 500px;
-    // margin-top: -25px;
     margin: 0;
     padding-left: 167px;
-  }
 
-  .options__list--flex {
-    display: flex;
-    flex-wrap: wrap;
-  }
+    &--flex {
+      display: flex;
+      flex-wrap: wrap;
+    }
 
-  .options__list--special {
-    display: block;
-    width: 100%;
-    padding-left: 0;
+    &--special {
+      display: block;
+      width: 100%;
+      padding-left: 0;
+    }
   }
 
   .options__item {
     display: block;
     min-height: 51px;
     margin-bottom: 25px;
-  }
 
-  .options__item--text {
-    margin-bottom: 9px;
-  }
+    &--text {
+      margin-bottom: 9px;
+    }
 
-  .options__item--checkbox {
-    width: 262px;
+    &--checkbox {
+      width: 262px;
+    }
+
+    &--wrap {
+      display: flex;
+      justify-content: flex-start;
+    }
   }
 
   @media (max-width: 1149px) {
@@ -362,27 +362,25 @@
     }
   }
 
-  .options__item--wrap {
-    display: flex;
-    justify-content: flex-start;
-  }
-
   .options__legend {
-    height: 0;
-    margin-bottom: -20px;
-  }
+    position: absolute;
+    top: 18px;
+    left: 51px;
 
-  .options__legend--special {
-    display: block;
-    width: 167px;
-    min-height: 51px;
-    margin: 0;
+    &--special {
+      position: static;
 
-    line-height: 51px;
-  }
+      display: block;
+      width: 167px;
+      min-height: 51px;
+      margin: 0;
 
-  .options__legend--inside {
-    width: 167px;
+      line-height: 51px;
+    }
+
+    &--inside {
+      width: 167px;
+    }
   }
 
   .options__label {
@@ -390,21 +388,21 @@
     min-height: 51px;
 
     font-size: 19px;
-  }
 
-  .options__label--box {
-    padding-top: 17px;
-    padding-left: 81px;
-  }
+    &--box {
+      padding-top: 16px;
+      padding-left: 81px;
+    }
 
-  .options__label--text {
-    margin-top: 0;
-  }
+    &--text {
+      margin-top: 0;
+    }
 
-  .options__label--radio {
-    &::before {
-      width: 48px;
-      height: 48px;
+    &--radio {
+      &::before {
+        width: 48px;
+        height: 48px;
+      }
     }
   }
 
@@ -446,10 +444,10 @@
   .options__icon {
     top: 10px;
     right: 26px;
-  }
 
-  .options__icon--email {
-    right: 22px;
+    &--email {
+      right: 22px;
+    }
   }
 
   .options__input--name1,
@@ -475,11 +473,15 @@
     box-sizing: border-box;
     width: 500px;
     margin: 0;
-    padding: 13px 40px 13px 16px;
+    padding: 13px 60px 13px 16px;
 
     font-size: 19px;
 
     background-color: #f1f1f1;
+  }
+
+  .options__input--phone {
+    letter-spacing: 0;
   }
 
   .options__input--textarea {
@@ -513,19 +515,17 @@
   }
 
   .options__wrap {
-    padding-top: 73px;
-
-    &:nth-child(2) {
-      padding-top: 68px;
-    }
+    padding-top: 25px;
 
     &--name {
-      padding-top: 67px;
+      padding-top: 21px;
       padding-bottom: 28px;
     }
 
     &--contacts {
+      width: 100%;
       padding-top: 26px;
+      padding-bottom: 24px;
     }
 
     &--area {
@@ -533,6 +533,7 @@
 
       padding-top: 50px;
       padding-bottom: 25px;
+      padding-left: 111px;
     }
 
     &--buttom {
@@ -549,9 +550,12 @@
   }
 
   .options__legend {
-    width: 175px;
-    margin-bottom: -43px;
-    padding-left: 60px;
+    top: 43px;
+    left: 110px;
+
+    &--special {
+      width: 114px;
+    }
   }
 
   .options__list {
@@ -559,7 +563,7 @@
     padding-left: 175px;
 
     &--special {
-      padding-left: 2px;
+      padding-left: 61px;
     }
   }
 
@@ -591,10 +595,10 @@
 
   .options__icon {
     top: 10px;
-    right: 10px;
+    right: 69px;
 
     &--email {
-      right: 6px;
+      right: 66px;
     }
   }
 }

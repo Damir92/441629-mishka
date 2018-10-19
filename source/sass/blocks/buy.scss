@@ -2,8 +2,6 @@
   display: flex;
   justify-content: space-between;
   padding: 21px 28px 27px;
-
-  // border-bottom: 1px solid #ececec;
 }
 
 .buy__price {
@@ -18,13 +16,15 @@
   opacity: 0.2;
 
   &:hover {
-    fill: #63d1bb;
     opacity: 1;
+
+    fill: #63d1bb;
   }
 
   &:active {
-    fill: #63d1bb;
     opacity: 0.3;
+
+    fill: #63d1bb;
   }
 }
 
@@ -45,7 +45,7 @@
 
 @media (min-width: $desktop-width) {
   .buy {
-    margin-left: 27px;
     width: 256px;
+    margin-left: 27px;
   }
 }

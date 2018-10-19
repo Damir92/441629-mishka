@@ -17,18 +17,18 @@
 
 .social__link {
   display: block;
-}
 
-.social__link--instagram {
-  padding-top: 5px;
-}
+  &--instagram {
+    padding-top: 5px;
+  }
 
-.social__link--facebook {
-  padding-left: 4px;
-}
+  &--facebook {
+    padding-left: 4px;
+  }
 
-.social__link--twitter {
-  padding-top: 5px;
+  &--twitter {
+    padding-top: 5px;
+  }
 }
 
 @media (min-width: $tablet-width) {
