@@ -104,16 +104,14 @@
             </tr>
           </table>
           <div class="feature__image-wrap">
-            <img class="feature__image" src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Вязанные корзинки">
+            <picture>
+              <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
+              <img class="feature__image" src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x" width="260" height="315" alt="Вязанные корзинки">
+            </picture>
           </div>
           <p class="feature__price">Цена: 990 руб.</p>
           <a class="feature__link button" href="#">Заказать</a>
-        </div>
-        <div class="feature__big-image">
-          <picture>
-            <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg">
-            <img class="feature__big-image--pict" src="img/triple-set-tablet@1x.jpg" width="333" height="404" alt="Вязанные корзинки">
-          </picture>
         </div>
       </div>
     </section>
@@ -169,9 +167,9 @@
       </div>
       <div class="contacts__map-wrap">
         <picture>
-          <source media="(min-width: 1150px)" srcset="img/map-desktop@1x.jpg">
-          <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg">
-          <img class="contacts__map-image" src="img/map-mobile@1x.jpg" width="322" height="457" alt="Наш адрес на карте">
+          <source media="(min-width: 1150px)" srcset="img/map-desktop@1x.jpg 1x, img/map-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg 1x, img/map-tablet@2x.jpg 2x">
+          <img class="contacts__map-image" src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg 2x" width="322" height="457" alt="Наш адрес на карте">
         </picture>
       </div>
       <a class="contacts__write-link button" href="#">Напишите нам</a>
