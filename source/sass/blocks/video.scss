@@ -39,6 +39,12 @@
   height: 150px;
 
   background-image: url("../img/video-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: 260px auto;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/video-mobile@2x.jpg");
+  }
 }
 
 .video__window-wrap {
@@ -124,6 +130,11 @@
     height: 455px;
 
     background-image: url("../img/video-tablet@1x.jpg");
+    background-size: 668px auto;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/video-tablet@2x.jpg");
+    }
   }
 
   .video__window-wrap {
@@ -200,6 +211,11 @@
 
     background-image: url("../img/video-desktop@1x.jpg");
     background-position: center center;
+    background-size: 682px auto;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/video-desktop@2x.jpg");
+    }
   }
 
   .video__link {

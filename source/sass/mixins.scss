@@ -9,6 +9,16 @@
   width: $mobile-width;
   padding: 0 $mobile-padding;
   margin: 0 auto;
+
+  // @media (min-width: $tablet-width) {
+  //   width: $tablet-width;
+  //   padding: 0 $tablet-padding;
+  // }
+
+  // @media (min-width: $desktop-width) {
+  //   width: $desktop-width;
+  //   padding: 0 $desktop-padding;
+  // }
 }
 
 @mixin tablet-size {
