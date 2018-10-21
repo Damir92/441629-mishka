@@ -24,21 +24,39 @@
   width: 1px;
   height: 1px;
   margin: -1px;
-  border: 0;
   padding: 0;
+  overflow: hidden;
 
   white-space: nowrap;
 
+  border: 0;
+
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
-  overflow: hidden;
 }
 
 body {
-  font-family: "Open Sans", "Arial", sans-serif;
-  font-weight: 700;
   width: $mobile-width;
   margin: 0 auto;
+
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: 700;
+}
+
+.bg-layer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 15;
+
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.bg-layer--disable {
+  display: none;
 }
 
 @media (min-width: $tablet-width) {

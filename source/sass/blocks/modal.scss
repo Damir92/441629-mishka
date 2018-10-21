@@ -1,0 +1,134 @@
+.modal {
+  @include mobile-size;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 20;
+
+  height: 340px;
+  padding-top: 30px;
+
+  background-color: #ffffff;
+  border-top: 2px solid #c7c7c7;
+  border-bottom: 2px solid #c7c7c7;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.modal--disable {
+  transform: translate(-50%, -50%) scale(0);
+}
+
+.modal__title {
+  margin: 0;
+  padding: 0 50px;
+
+  font-size: 25px;
+  line-height: $big-line;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.modal__description {
+  margin-top: 12px;
+  margin-bottom: 23px;
+
+  font-weight: 400;
+  font-size: 15px;
+  line-height: $big-line;
+  text-align: center;
+}
+
+.modal__list {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 31px;
+  padding: 0;
+
+  list-style: none;
+}
+
+.modal__label {
+  display: block;
+  box-sizing: border-box;
+  width: 82px;
+  height: 52px;
+  padding: 16px 0;
+
+  font-size: $basic-font-size;
+  line-height: 16px;
+  text-align: center;
+
+  border: 2px solid #ececec;
+  cursor: pointer;
+
+  &:hover {
+    border-color: #c7c7c7;
+  }
+
+  &:active {
+    border-color: #62d1ba;
+  }
+}
+
+.modal__input:checked {
+  & + .modal__label {
+    border-color: #62d1ba;
+  }
+}
+
+.modal__button {
+  height: 52px;
+  margin-bottom: 45px;
+
+  font-weight: 700;
+  line-height: 16px;
+  color: #ffffff;
+
+  background-color: #63d1bb;
+  border-color: #63d1bb;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: #ffffff;
+
+    background-color: #63d1bb;
+    opacity: 0.6;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .modal {
+    width: 566px;
+    height: 336px;
+    padding: 32px 100px;
+  }
+
+  .modal__title {
+    padding: 0;
+
+    font-size: 30px;
+    line-height: 57px;
+  }
+
+  .modal__description {
+    margin-top: 14px;
+    margin-bottom: 21px;
+
+    font-size: 17px;
+  }
+
+  .modal__list {
+    margin: 0 8px 31px;
+  }
+
+  .modal__label {
+    width: 112px;
+  }
+
+  .modal__button {
+    width: 350px;
+    margin-left: 8px;
+  }
+}

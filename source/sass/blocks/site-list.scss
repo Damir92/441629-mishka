@@ -30,9 +30,7 @@
   &:hover .site-list__icon {
     opacity: 1;
 
-    path {
-      fill: #63d1bb;
-    }
+    fill: #63d1bb;
   }
 
   &:active .site-list__link-text {
@@ -42,9 +40,7 @@
   &:active .site-list__icon {
     opacity: 0.3;
 
-    path {
-      fill: #63d1bb;
-    }
+    fill: #63d1bb;
   }
 }
 
@@ -57,6 +53,8 @@
   height: 18px;
 
   opacity: 0.2;
+
+  fill: #231f20;
 }
 
 .site-list__icon--cart {
