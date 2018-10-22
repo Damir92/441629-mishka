@@ -15,7 +15,7 @@
 
     background-image: url("../img/bg-zigzag-line.svg");
     background-repeat: repeat-x;
-    background-position-x: 10px;
+    background-position: center;
     background-size: auto 6px;
   }
 }
@@ -175,17 +175,19 @@
   .reviews {
     width: $desktop-width;
     margin-bottom: 10px;
-    padding-top: 92px;
-    padding-bottom: 150px;
+    padding-top: 93px;
+    padding-bottom: 149px;
     padding-left: 220px;
 
     background-position: 50px 22px;
 
     &::after {
       height: 21px;
+      width: $desktop-data-width;
+      margin: 0 $desktop-margin;
 
       background-image: url("../img/bg-zigzag-line.svg");
-      background-position-x: 24px;
+      background-position: 24px;
       background-size: auto 21px;
     }
   }

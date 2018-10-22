@@ -6,6 +6,8 @@
   <title>Магазин «Мишка»</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="format-detection" content="telephone=no">
+  <link rel="preload" href="fonts/opensans.woff2" as="font">
+  <link rel="preload" href="fonts/opensansbold.woff2" as="font">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -90,38 +92,36 @@
         <h2 class="feature__title">Вязаные корзинки</h2>
         <p class="feature__promo">Товар недели</p>
       </header>
-      <div class="feature__container">
-        <div class="feature__wrap">
-          <p class="feature__description">
-            Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.
-          </p>
-          <table class="feature__table">
-            <tr class="feature__row">
-              <td class="feature__field">Цвет:</td>
-              <td class="feature__value">«Тиффани»/серый</td>
-            </tr>
-            <tr class="feature__row">
-              <td class="feature__field">Диаметр:</td>
-              <td class="feature__value">25 см</td>
-            </tr>
-            <tr class="feature__row">
-              <td class="feature__field">Высота:</td>
-              <td class="feature__value">15 см</td>
-            </tr>
-          </table>
-          <div class="feature__image-wrap">
-            <picture>
-              <source type="image/webp" media="(min-width: 1150px)" srcset="img/webp/triple-set-desktop@1x.webp 1x, img/webp/triple-set-desktop@2x.webp 2x">
-              <source type="image/webp" media="(min-width: 768px)" srcset="img/webp/triple-set-tablet@1x.webp 1x, img/webp/triple-set-tablet@2x.webp 2x">
-              <source type="image/webp" srcset="img/webp/triple-set-mobile@1x.webp 1x, img/webp/triple-set-mobile@2x.webp 2x">
-              <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
-              <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
-              <img class="feature__image" src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x" width="260" height="315" alt="Вязанные корзинки">
+      <div class="feature__wrap">
+        <p class="feature__description">
+          Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.
+        </p>
+        <table class="feature__table">
+          <tr class="feature__row">
+            <td class="feature__field">Цвет:</td>
+            <td class="feature__value">«Тиффани»/серый</td>
+          </tr>
+          <tr class="feature__row">
+            <td class="feature__field">Диаметр:</td>
+            <td class="feature__value">25 см</td>
+          </tr>
+          <tr class="feature__row">
+            <td class="feature__field">Высота:</td>
+            <td class="feature__value">15 см</td>
+          </tr>
+        </table>
+        <div class="feature__image-wrap">
+          <picture>
+            <source type="image/webp" media="(min-width: 1150px)" srcset="img/webp/triple-set-desktop@1x.webp 1x, img/webp/triple-set-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/webp/triple-set-tablet@1x.webp 1x, img/webp/triple-set-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/webp/triple-set-mobile@1x.webp 1x, img/webp/triple-set-mobile@2x.webp 2x">
+            <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
+            <img class="feature__image" src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x" width="260" height="315" alt="Вязанные корзинки">
             </picture>
-          </div>
-          <p class="feature__price">Цена: 990 руб.</p>
-          <a class="feature__link button button--modal" href="#">Заказать</a>
         </div>
+        <p class="feature__price">Цена: 990 руб.</p>
+        <a class="feature__link button button--modal" href="#">Заказать</a>
       </div>
     </section>
     <section class="about">
@@ -183,6 +183,7 @@
           <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg 1x, img/map-tablet@2x.jpg 2x">
           <img class="contacts__map-image" src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg 2x" width="322" height="457" alt="Наш адрес на карте">
         </picture>
+        <div class="contacts__ya-map" id="ya-map"></div>
       </div>
       <a class="contacts__write-link button" href="#">Напишите нам</a>
     </section>
@@ -260,6 +261,8 @@
   </section>
   <script src="js/picturefill.min.js"></script>
   <script src="js/script.js"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+  <script src="js/yandex.map.js"></script>
 </body>
 
 </html>

@@ -91,8 +91,8 @@
   .feature {
     @include tablet-size;
 
-    margin-bottom: 16px;
-    padding-bottom: 69px;
+    margin-bottom: 15px;
+    padding-bottom: 70px;
 
     &::after {
       height: 17px;
@@ -131,8 +131,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     width: $tablet-data-width;
-    // width: 290px;
-    height: 404px;
+    height: 412px;
   }
 
   .feature__description {
@@ -156,6 +155,7 @@
   }
 
   .feature__image-wrap {
+    padding-top: 8px;
     order: 1;
   }
 
@@ -163,11 +163,6 @@
     width: 333px;
     height: 404px;
     margin-left: 44px;
-  }
-
-  .feature__container {
-    display: flex;
-    justify-content: space-between;
   }
 }
 
@@ -182,16 +177,18 @@
 
     &::after {
       height: 21px;
+      width: $desktop-data-width;
+      margin: 0 $desktop-margin;
 
       background-image: url("../img/bg-zigzag-line.svg");
-      background-position-x: 24px;
+      background-position: 24px;
       background-size: auto 21px;
     }
   }
 
   .feature__header {
     position: absolute;
-    top: 68px;
+    top: 60px;
     z-index: 1;
 
     flex-direction: row-reverse;
@@ -211,14 +208,14 @@
   .feature__wrap {
     align-content: space-between;
     width: 875px;
-    height: 636px;
+    height: 644px;
     margin-top: 16px;
     margin-left: 175px;
   }
 
   .feature__description {
     margin-bottom: 42px;
-    padding-top: 158px;
+    padding-top: 166px;
   }
 
   .feature__table {
