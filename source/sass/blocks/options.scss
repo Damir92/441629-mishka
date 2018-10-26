@@ -226,16 +226,6 @@
   }
 }
 
-.options__label--box {
-  &:active {
-    color: rgba(0, 0, 0, 0.3);
-
-    &::before {
-      border-color: rgba(0, 0, 0, 0.3);
-    }
-  }
-}
-
 .options__label--radio::before {
   content: "";
   position: absolute;
