@@ -108,8 +108,8 @@
 
       background-image: url("../img/bg-zigzag-fill.svg");
       background-repeat: repeat-x;
-      background-size: auto 22.7px;
       background-position: center;
+      background-size: auto 22.7px;
     }
   }
 
@@ -141,12 +141,13 @@
 
 @media (min-width: $desktop-width) {
   .category {
+    margin-bottom: 50px;
     padding-bottom: 3px;
-    margin-bottom: 43px;
 
     &::after {
-      height: 37px;
       bottom: 0;
+
+      height: 37px;
 
       background-size: auto 37px;
     }

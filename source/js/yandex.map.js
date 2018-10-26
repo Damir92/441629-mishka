@@ -1,5 +1,3 @@
-// yandex maps
-
 ymaps.ready(init);
 
 function init() {

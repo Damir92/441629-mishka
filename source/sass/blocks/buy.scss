@@ -9,6 +9,24 @@
   line-height: $middle-line;
 }
 
+.buy__cart:focus {
+  outline: none;
+
+  & .buy__icon {
+    opacity: 1;
+
+    fill: #63d1bb;
+  }
+}
+
+.buy__cart:active {
+  & .buy__icon {
+    opacity: 0.3;
+
+    fill: #63d1bb;
+  }
+}
+
 .buy__icon {
   width: 21px;
   height: 18px;
@@ -17,7 +35,8 @@
 
   fill: #221f1f;
 
-  &:hover {
+  &:hover,
+  &:focus {
     opacity: 1;
 
     fill: #63d1bb;

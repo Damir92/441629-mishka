@@ -111,9 +111,8 @@
 
   .about__list {
     display: flex;
-    flex-direction: column;
     flex-wrap: wrap;
-    height: 470px;
+    min-height: 470px;
     margin-bottom: 21px;
     padding-top: 17px;
   }
@@ -125,6 +124,22 @@
 
     font-size: 20px;
     line-height: 22px;
+
+    &--style {
+      order: 1;
+    }
+
+    &--domestic {
+      order: 1;
+    }
+
+    &--likes {
+      order: 2;
+    }
+
+    &--gift {
+      order: 2;
+    }
   }
 }
 

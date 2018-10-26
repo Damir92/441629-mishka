@@ -38,6 +38,7 @@
   width: 260px;
   height: 150px;
 
+  background-color: #ffffff;
   background-image: url("../img/video-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-size: 260px auto;
@@ -165,21 +166,27 @@
   }
 
   .video__wrap {
-    flex-wrap: wrap;
+    position: relative;
+
     justify-content: space-between;
-    align-content: flex-start;
-    height: 453px;
+    align-items: flex-end;
+    min-height: 453px;
     padding: 0;
 
-    &:hover {
+    &:hover,
+    &:focus {
       box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    &:active {
+      box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
     }
   }
 
   .video__title {
     width: 150px;
     margin-top: 40px;
-    margin-left: 78px;
+    margin-right: 139px;
     padding-top: 55px;
     padding-left: 0;
 
@@ -191,11 +198,15 @@
 
   .video__description {
     width: 280px;
-    margin-left: 78px;
+    margin-right: 9px;
     padding-top: 22px;
   }
 
   .video__window-wrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+
     width: 681px;
     height: 453px;
     margin-bottom: 0;
@@ -220,7 +231,7 @@
 
   .video__link {
     width: 230px;
+    margin-right: 57px;
     margin-bottom: 59px;
-    margin-left: 80px;
   }
 }

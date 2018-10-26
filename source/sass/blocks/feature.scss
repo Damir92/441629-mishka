@@ -126,12 +126,13 @@
   }
 
   .feature__wrap {
+    position: relative;
+
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
     justify-content: space-between;
     width: $tablet-data-width;
-    height: 412px;
+    min-height: 412px;
   }
 
   .feature__description {
@@ -148,6 +149,7 @@
   }
 
   .feature__price {
+    width: 290px;
     margin: 8px 0 29px;
 
     font-size: 20px;
@@ -155,8 +157,9 @@
   }
 
   .feature__image-wrap {
-    padding-top: 8px;
-    order: 1;
+    position: absolute;
+    top: 8px;
+    right: 0;
   }
 
   .feature__image {
@@ -169,15 +172,14 @@
 @media (min-width: $desktop-width) {
   .feature {
     @include desktop-size;
-
     position: relative;
 
     margin-bottom: 30px;
     padding-bottom: 95px;
 
     &::after {
-      height: 21px;
       width: $desktop-data-width;
+      height: 21px;
       margin: 0 $desktop-margin;
 
       background-image: url("../img/bg-zigzag-line.svg");
@@ -187,12 +189,10 @@
   }
 
   .feature__header {
-    position: absolute;
-    top: 60px;
-    z-index: 1;
-
     flex-direction: row-reverse;
     justify-content: flex-end;
+    margin-bottom: 0;
+    padding-top: 53px;
   }
 
   .feature__title {
@@ -208,24 +208,29 @@
   .feature__wrap {
     align-content: space-between;
     width: 875px;
-    height: 644px;
-    margin-top: 16px;
+    min-height: 480px;
+    margin-top: 0;
     margin-left: 175px;
   }
 
   .feature__description {
-    margin-bottom: 42px;
-    padding-top: 166px;
+    margin-bottom: 50px;
+    padding-top: 44px;
   }
 
   .feature__table {
     width: 290px;
-    margin-bottom: 80px;
+    margin-bottom: 92px;
   }
 
   .feature__field,
   .feature__value {
     padding: 8px 0 11px;
+  }
+
+  .feature__image-wrap {
+    top: -114px;
+    z-index: -1;
   }
 
   .feature__image {
@@ -235,7 +240,7 @@
   }
 
   .feature__price {
-    margin-top: 23px;
-    margin-bottom: 27px;
+    margin-top: 16px;
+    margin-bottom: 34px;
   }
 }

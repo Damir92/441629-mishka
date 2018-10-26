@@ -2,7 +2,7 @@
 var navMain = document.querySelector(".site-list");
 var navToggle = document.querySelector(".site-list__toggle");
 // modal window variables
-var button = document.querySelectorAll(".button--modal");
+var button = document.querySelectorAll(".button-modal");
 var modal = document.querySelector(".modal");
 var bgLayer = document.querySelector(".bg-layer");
 
